@@ -1,26 +1,26 @@
 import setuptools
 
 setuptools.setup(
-    name='{{ cookiecutter.package_name }}',
-    version='{{ cookiecutter.package_version }}',
+    name="{{ cookiecutter.package_name }}",
+    version="{{ cookiecutter.package_version }}",
     url="{{ cookiecutter.package_url }}",
 
     author="{{ cookiecutter.author_name }}",
     author_email="{{ cookiecutter.author_email }}",
 
-    {% if cookiecutter.maintainer_name is not None -%}
+    {%- if cookiecutter.maintainer_name -%}
     maintainer="{{ cookiecutter.maintainer_name }}",
     maintainer_email="{{ cookiecutter.maintainer_email }}",
     {%- endif %}
 
-    description = "{{ cookiecutter.package_description }}",
-    long_description = open('README.rst').read(),
+    description="{{ cookiecutter.package_description }}",
+    long_description=open('README.rst').read(),
 
-    packages = setuptools.find_packages(),
+    packages=setuptools.find_packages(),
 
     install_requires=[],
 
-    classifiers = [
+    classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
