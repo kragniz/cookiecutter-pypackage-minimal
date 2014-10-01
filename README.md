@@ -1,13 +1,11 @@
 cookiecutter-pypackage-minimal
 ==============================
 
-An opinionated, minimal cookiecutter template for Python packages, and some guidelines for Python packaging.
+An opinionated, minimal [cookiecutter](https://github.com/audreyr/cookiecutter) template for Python packages, and some guidelines for Python packaging.
 
 Usage
 -----
 
-::
-    
     pip install cookiecutter
     git clone https://github.com/borntyping/cookiecutter-pypackage-minimal.git
     cookiecutter cookiecutter-pypackage-minimal/
@@ -24,7 +22,7 @@ The decisions `cookiecutter-pypackage-minimal` makes should all be explained her
 ### README
 
 * **README should use reStructuredText format**
-  This is the format used by most Python tools, and is expected by setuptools
+  This is the format used by most Python tools, is expected by [setuptools](http://pythonhosted.org/setuptools/), and can be used by [Sphinx](http://sphinx-doc.org/).
 * **As few README files as possible**
   Additional README files (AUTHORS, CHANGELOG, etc) should be left to the user to create when necessary.
 
@@ -35,8 +33,7 @@ The decisions `cookiecutter-pypackage-minimal` makes should all be explained her
 * **setup.py should not import anything from the package**
   When installing from source, the user may not have the packages dependencies installed, and importing the package is likely to raise an `ImportError`.
 * **setup.py should be the canonical source of package dependencies**
-  There is no reason to duplicate dependency specifiers (e.g. also using `requirements.txt`)
-  See the testing section below for testing dependencies.
+  There is no reason to duplicate dependency specifiers (i.e. also using a `requirements.txt` file). See the testing section below for testing dependencies.
 
 ### Testing
 
