@@ -2,9 +2,6 @@
     "author_name": "Sam Clements",
     "author_email": "sam@borntyping.co.uk",
 
-    "maintainer_name": null,
-    "maintainer_email": null,
-
     "package_name": "cookiecutter-pypackage-minimal",
     "package_version": "0.1.0",
     "package_description": "An opinionated, minimal cookiecutter template for Python packages",

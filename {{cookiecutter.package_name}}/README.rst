@@ -34,6 +34,3 @@ Authors
 -------
 
 `{{ cookiecutter.package_name }}` was written by `{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>`_.
-{% if cookiecutter.maintainer_name -%}
-`{{ cookiecutter.package_name }}` was written by `{{ cookiecutter.maintainer_name }} <{{ cookiecutter.maintainer_email }}>`_.
-{%- endif %}
