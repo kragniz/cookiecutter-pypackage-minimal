@@ -2,7 +2,7 @@
 {{ cookiecutter.package_name|count * "=" }}
 
 {% if cookiecutter.readme_pypi_badge -%}
-.. image:: https://pypip.in/v/{{ cookiecutter.package_name }}/badge.png
+.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.package_name }}.svg
     :target: https://pypi.python.org/pypi/{{ cookiecutter.package_name }}
     :alt: Latest PyPI version
 {%- endif %}
