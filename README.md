@@ -7,7 +7,7 @@ Usage
 -----
 
     pip install cookiecutter
-    git clone https://github.com/borntyping/cookiecutter-pypackage-minimal.git
+    git clone https://github.com/kragniz/cookiecutter-pypackage-minimal.git
     cookiecutter cookiecutter-pypackage-minimal/
 
 You should then change the classifiers in `{{ package_name }}/setup.py` - it is assumed that the project will run on the latest versions of Python 2 and 3, so you should remove any classifiers that do not apply. The full list of PyPI classifiers can be found [here](https://pypi.python.org/pypi?:action=list_classifiers).
