@@ -22,7 +22,7 @@ The decisions `cookiecutter-pypackage-minimal` makes should all be explained her
 ### README
 
 * **README should use reStructuredText format**
-  This is the format used by most Python tools, is expected by [setuptools](http://pythonhosted.org/setuptools/), and can be used by [Sphinx](http://sphinx-doc.org/).
+  This is the format used by most Python tools, is expected by [setuptools](https://setuptools.readthedocs.io), and can be used by [Sphinx](http://sphinx-doc.org/).
 * **As few README files as possible**
   Additional README files (AUTHORS, CHANGELOG, etc) should be left to the user to create when necessary.
 
@@ -37,9 +37,9 @@ The decisions `cookiecutter-pypackage-minimal` makes should all be explained her
 
 ### Testing
 
-* **Use [Tox](http://testrun.org/tox/latest/) to manage test environments**
+* **Use [Tox](https://tox.readthedocs.io) to manage test environments**
   Tox provides isolation, runs tests across multiple Python versions, and ensures the package can be installed.
-* **Uses [pytest](http://pytest.org/latest/) as the default test runner**
+* **Uses [pytest](https://docs.pytest.org) as the default test runner**
   This can be changed easily, though pytest is a easier, more powerful test library and runner than the standard library's unittest.
 * **Define testing dependencies in `tox.ini`**
   Avoid duplicating dependency definitions, and use `tox.ini` as the canonical description of how the unittests should be run.
