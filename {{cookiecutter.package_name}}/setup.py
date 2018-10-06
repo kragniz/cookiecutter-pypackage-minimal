@@ -11,7 +11,7 @@ setuptools.setup(
     description="{{ cookiecutter.package_description }}",
     long_description=open('README.rst').read(),
 
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=('tests',)),
 
     install_requires=[],
 
