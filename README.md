@@ -43,3 +43,7 @@ The decisions `cookiecutter-pypackage-minimal` makes should all be explained her
   This can be changed easily, though pytest is a easier, more powerful test library and runner than the standard library's unittest.
 * **Define testing dependencies in `tox.ini`**
   Avoid duplicating dependency definitions, and use `tox.ini` as the canonical description of how the unittests should be run.
+* **`tests` directory should not be a package**
+  The `tests` directory should not be a Python package unless you want to define some fixtures.
+  But the best practices are to use [PyTest fixtures](https://docs.pytest.org/en/latest/fixture.html) which provides a better solution.
+  Therefore, the `tests` directory has no `__init__.py` file.

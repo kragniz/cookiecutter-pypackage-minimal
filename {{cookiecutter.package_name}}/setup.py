@@ -24,7 +24,7 @@ setup(
     description="{{ cookiecutter.package_description }}",
     long_description=read("README.rst"),
 
-    packages=find_packages(),
+    packages=find_packages(exclude=('tests',)),
 
     install_requires=[],
 
