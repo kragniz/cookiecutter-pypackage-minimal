@@ -28,8 +28,6 @@ The decisions `cookiecutter-pypackage-minimal` makes should all be explained her
 
 ### LICENSE
 
-* **LICENSE can use reStructuredText format**
-  The provided license file use reStructuredText format. Of course you can decide to use a text format or even [Markdown](https://en.wikipedia.org/wiki/Markdown). It's up to you to choose the format which best satisfies your needs.
 * **MIT license by default**
   This template provides you the classic [MIT](https://choosealicense.com/licenses/mit/) licence: it lets people do almost anything they want with your project, including to make and distribute closed source versions.
   If you [choose another license](https://choosealicense.com/), you also need to update the `{{ package_name }}/setup.py` file:
