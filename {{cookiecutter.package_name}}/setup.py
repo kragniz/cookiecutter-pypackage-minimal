@@ -17,6 +17,7 @@ setup(
     name="{{ cookiecutter.package_name }}",
     version="{{ cookiecutter.package_version }}",
     url="{{ cookiecutter.package_url }}",
+    license='MIT',
 
     author="{{ cookiecutter.author_name }}",
     author_email="{{ cookiecutter.author_email }}",
@@ -30,6 +31,7 @@ setup(
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
