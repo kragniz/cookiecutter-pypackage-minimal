@@ -1,5 +1,6 @@
-{{ cookiecutter.package_name }}
-{{ cookiecutter.package_name|count * "=" }}
+============================================================================
+{{ cookiecutter.package_name }}. {{ cookiecutter.package_name|count * "=" }}
+============================================================================
 
 {% if cookiecutter.readme_pypi_badge -%}
 .. image:: https://img.shields.io/pypi/v/{{ cookiecutter.package_name }}.svg
