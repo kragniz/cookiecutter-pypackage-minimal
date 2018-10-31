@@ -1,17 +1,14 @@
-import io
-import os
-import re
+""" Minimal cookiecutter template """
 
-from setuptools import find_packages
-from setuptools import setup
+from os import path
+from io import open
+from setuptools import find_packages, setup
 
+here = path.abspath(path.dirname(__file__))
 
-def read(filename):
-    filename = os.path.join(os.path.dirname(__file__), filename)
-    text_type = type(u"")
-    with io.open(filename, mode="r", encoding='utf-8') as fd:
-        return re.sub(text_type(r':[a-z]+:`~?(.*?)`'), text_type(r'``\1``'), fd.read())
-
+# Get the long description from the README file.
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name="{{ cookiecutter.package_name }}",
@@ -23,14 +20,17 @@ setup(
     author_email="{{ cookiecutter.author_email }}",
 
     description="{{ cookiecutter.package_description }}",
-    long_description=read("README.rst"),
+    long_description=long_description,
 
     packages=find_packages(exclude=('tests',)),
 
     install_requires=[],
 
+    zip_safe=False,
+
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
+        'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
