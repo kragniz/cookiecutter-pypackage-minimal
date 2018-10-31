@@ -1,5 +1,3 @@
-""" Minimal cookiecutter template """
-
 from os import path
 from io import open
 from setuptools import find_packages, setup
