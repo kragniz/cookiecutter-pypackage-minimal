@@ -9,5 +9,7 @@
     
     "readme_pypi_badge": true,
     "readme_travis_badge": true,
-    "readme_travis_url": "https://travis-ci.org/borntyping/cookiecutter-pypackage-minimal"
+    "readme_travis_url": "https://travis-ci.org/borntyping/cookiecutter-pypackage-minimal",
+
+    "long_description_file": ["README.rst", "README.md", "README.txt", "README"]
 }

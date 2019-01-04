@@ -1,3 +1,13 @@
+"""
+{{ cookiecutter.package_name }}'s configuration file
+{%
+set long_description_content_type = {"README.rst": "text/x-rst",
+                                     "README.md": "text/markdown",
+                                     "README.txt": "text/plain",
+                                     "README": "text/plain"}[cookiecutter.long_description_file]
+-%}
+"""
+
 import io
 import os
 import re
@@ -23,7 +33,8 @@ setup(
     author_email="{{ cookiecutter.author_email }}",
 
     description="{{ cookiecutter.package_description }}",
-    long_description=read("README.rst"),
+    long_description=read("{{ cookiecutter.long_description_file }}"),
+    long_description_content_type="{{ long_description_content_type }}",
 
     packages=find_packages(exclude=('tests',)),
 

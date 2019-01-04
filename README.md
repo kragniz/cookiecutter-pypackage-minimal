@@ -21,8 +21,9 @@ The decisions `cookiecutter-pypackage-minimal` makes should all be explained her
 
 ### README
 
-* **README should use reStructuredText format**
-  This is the format used by most Python tools, is expected by [setuptools](https://setuptools.readthedocs.io), and can be used by [Sphinx](http://sphinx-doc.org/).
+* **README can use reStructuredText, Markdown or Text format**
+  This template gives you the possibility to choose between reStructuredText, Markdown or the (legacy) Text format.
+  [reStructuredText](http://docutils.sourceforge.net/rst.html) is the format used by most Python tools, but, nowadays, [Markdown](https://github.github.com/gfm/) is so popular that it is now supported by [setuptools](https://setuptools.readthedocs.io) and can be used by [Sphinx](http://sphinx-doc.org/).
 * **As few README files as possible**
   Additional README files (AUTHORS, CHANGELOG, etc) should be left to the user to create when necessary.
 
