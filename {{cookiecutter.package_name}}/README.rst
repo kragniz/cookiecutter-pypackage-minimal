@@ -1,6 +1,7 @@
 {{ cookiecutter.package_name }}
 {{ cookiecutter.package_name|count * "=" }}
 
+
 {% if cookiecutter.readme_pypi_badge -%}
 .. image:: https://img.shields.io/pypi/v/{{ cookiecutter.package_name }}.svg
     :target: https://pypi.python.org/pypi/{{ cookiecutter.package_name }}
@@ -27,7 +28,7 @@ Requirements
 Compatibility
 -------------
 
-Licence
+License
 -------
 
 Authors
