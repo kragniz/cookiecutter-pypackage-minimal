@@ -1,13 +1,16 @@
 {
-    "author_name": "Louis Taylor",
-    "author_email": "louis@kragniz.eu",
+    "author_name": "John Doe",
+    "author_email": "example@domain.com",
 
-    "package_name": "cookiecutter_pypackage_minimal",
-    "package_version": "0.1.0",
-    "package_description": "An opinionated, minimal cookiecutter template for Python packages",
-    "package_url": "https://github.com/kragniz/cookiecutter-pypackage-minimal",
+    "package_name": "ml_project",
+    "package_version": "0.0.1",
+    "package_description": "A data science project",
+    "package_url": "",
+    "license":"Commercial",
+
+    "python_version": "3.11",
     
-    "readme_pypi_badge": true,
-    "readme_travis_badge": true,
-    "readme_travis_url": "https://travis-ci.org/kragniz/cookiecutter-pypackage-minimal"
+    "_copy_without_render": [
+        "*.json"
+    ]
 }
