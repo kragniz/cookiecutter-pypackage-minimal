@@ -160,6 +160,10 @@ cython_debug/
 .idea/
 .vscode/
 
-data/
+# exclude everything
+data/*
+
+# exception to the rule
+!data/.gitkeep 
 
 
