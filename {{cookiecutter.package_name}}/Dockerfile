@@ -1,10 +1,7 @@
-FROM python:{{ cookiecutter.python_version }}
+FROM python:{{cookiecutter.python_version}}
 
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-
 COPY . .
 
-RUN pip install -e .
+RUN pip install -e ".[dev]"

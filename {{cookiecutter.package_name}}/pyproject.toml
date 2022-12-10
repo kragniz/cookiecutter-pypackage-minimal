@@ -1,0 +1,19 @@
+[project]
+name = "{{cookiecutter.package_name}}"
+description = "{{cookiecutter.package_description}}"
+readme = "README.md"
+requires-python = ">={{cookiecutter.python_version}}"
+classifiers = [
+    "Programming Language :: Python :: {{cookiecutter.python_version}}",
+]
+dependencies = [
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "ipykernel",
+    "pytest",
+    "pytest-cov",
+    "flake8",
+]
