@@ -17,28 +17,19 @@ setup(
     name="{{ cookiecutter.package_name }}",
     version="{{ cookiecutter.package_version }}",
     url="{{ cookiecutter.package_url }}",
-    license='MIT',
+    license='{{ cookiecutter.license }}',
 
     author="{{ cookiecutter.author_name }}",
     author_email="{{ cookiecutter.author_email }}",
 
     description="{{ cookiecutter.package_description }}",
-    long_description=read("README.rst"),
+    long_description=read("README.md"),
 
     packages=find_packages(exclude=('tests',)),
 
     install_requires=[],
 
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: {{ cookiecutter.python_version }}',
     ],
 )
